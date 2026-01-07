@@ -1,0 +1,20 @@
+/* Custom Variables*/
+:root{
+    /* TODO : Setup Colors*/
+    --primary-color: #000000;
+    --light-color: #ffffff;
+    --dark-color: #000000;
+}
+
+/* Default Styles*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Site Content */
+
+/* Utilities */
+
+/* Media Queries */
