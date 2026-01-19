@@ -1,0 +1,11 @@
+.error404 .text-title{
+    margin-top: 200px;
+    color: var(--main-color-dark);
+}
+.error404 .text-header{
+    color: var(--dark-color);
+}
+.error404 .text-subhead{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}

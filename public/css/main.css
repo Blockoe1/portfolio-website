@@ -36,19 +36,27 @@ a{
 
 /* Utilities */
 .container-l{
-    max-width: 1600px;
+    max-width: 90%;
     margin: 0 auto;
     padding: 0 40px;
 }
 .container{
-    max-width: 1500px;
+    max-width: 80%;
     margin: 0 auto;
     padding: 0 30px;
 }
 .container-s{
-    max-width: 1300px;
+    max-width: 70%;
     margin: 0 auto;
     padding: 0 15px;
+}
+.text-title
+{
+    font-size: 96pt;
+    line-height: 1em;
+    font-weight: 600;
+    margin: 50px 0 25px 0;
+    font-family: 'Fira Code', sans-serif
 }
 .text-header
 {
@@ -61,7 +69,7 @@ a{
 }
 .text-subhead
 {
-    font-size: 24pt;
+    font-size: 30pt;
     line-height: 1.2em;
     font-weight: 400;
     margin: 20px 0 12px 0;
@@ -82,4 +90,10 @@ a.text-button:hover{
     width: 60px;
     height: 60px;
     border-radius: 10px;
+}
+
+.filler
+{
+    background-color: var(--dark-color);
+    height: 100%;
 }

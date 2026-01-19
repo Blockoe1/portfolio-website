@@ -9,5 +9,5 @@ $(function ()
 });
 $(function ()
 {
-    $("#footer-a").load("footer-abbreviated.html");
+    $("#footer-a").load("footer-a.html");
 });
