@@ -1,9 +1,11 @@
 /* Custom Variables*/
 :root{
     /* TODO : Setup Colors*/
-    --primary-color: #000000;
-    --light-color: #ffffff;
-    --dark-color: #000000;
+    --dark-color: #1D1D1D;
+    --light-color: #F8F8F8;
+    --main-color-dark: #7B45C8;
+    --main-color-light: #D1B2FF;
+    --highlight: #FFFAB9;
 }
 
 /* Default Styles*/
@@ -13,4 +15,71 @@
     padding: 0;
 }
 
+body{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16pt;
+    line-height: 1.5em;
+    background-color: var(--light-color);
+    overflow-x: hidden;
+    color: var(--dark-color);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--main-color-dark);
+}
+
+
 /* Utilities */
+.container-l{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.container-s{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.text-header
+{
+    font-size: 48pt;
+    line-height: 1.2em;
+    font-weight: 600;
+    margin: 40px 0 20px 0;
+    color: var(--main-color-dark);
+    font-family: 'Fira Code', sans-serif
+}
+.text-subhead
+{
+    font-size: 24pt;
+    line-height: 1.2em;
+    font-weight: 400;
+    margin: 20px 0 12px 0;
+    font-family: 'Fira Code', sans-serif
+}
+.text-button{
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+}
+a.text-button:hover{
+    color: var(--main-color-light);
+    filter: drop-shadow(0 0 15px var(--main-color-dark));
+}
+
+.logo img
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}

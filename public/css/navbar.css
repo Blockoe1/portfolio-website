@@ -1,0 +1,43 @@
+.navbar{
+    background-color: var(--dark-color);
+    padding: 5px;
+    border-radius: 0 0 10px 10px;
+    filter: drop-shadow(0 4px 2px rgba(0, 0, 0, 0.25));
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    width: 100%;
+}
+
+.navbar .container-l{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.navbar .logo h2{
+    margin-top: 10px;
+    color: var(--light-color);
+}
+.navbar .main-menu ul{
+    display: flex;
+}
+.navbar .main-menu ul li a{
+    padding: 5px 15px;
+    display: block;
+    font-weight: 300;
+    margin-top: 10px;
+    color: var(--light-color);
+}
+.navbar .main-menu ul li a:hover
+{
+    /* Mandatory override since the color is less specific 
+        Note to self: CSS applies in order of specificity first, then by compile order.
+    */
+    color: var(--main-color-light);
+}
