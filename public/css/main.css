@@ -1,3 +1,5 @@
+@import "https://unpkg.com/semantic-props@beta";
+
 /* Custom Variables*/
 :root{
     /* TODO : Setup Colors*/
@@ -50,6 +52,7 @@ a{
     margin: 0 auto;
     padding: 0 15px;
 }
+
 .text-title
 {
     font-size: 96pt;
@@ -92,8 +95,92 @@ a.text-button:hover{
     border-radius: 10px;
 }
 
-.filler
-{
-    background-color: var(--dark-color);
+.project-card{
+    width: 700px;
+    height: 300px;
+    flex-shrink: 1;
+}
+.project-card a{
+    width: 100%;
     height: 100%;
+    color: var(--light-color);
+    display: flex;
+    align-items: center;
+    transition: 0.1s;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 3px solid var(--dark-color);
+    background-color: var(--dark-color);
+}
+.project-card a:hover{
+    /* transform: scale(1.02, 1.02); */
+    transform: var(--large-scale);
+}
+.project-card img{
+    height: 100%;
+}
+.project-card .card-text{
+    padding: 30px;
+    height: 100%;
+    text-align: center;
+}
+.project-card .text-header{
+    font-size: 24pt;
+    margin: auto;
+    transition: 0.1s;
+    color: var(--light-color);
+}
+.project-card a:hover .text-header{
+    color: var(--main-color-light);
+    filter: drop-shadow(0 0 15px var(--main-color-dark));
+}
+.project-card .text-subhead{
+    font-size: 16pt;
+}
+.project-card p{
+    font-size: 12pt;
+    text-align: left;
+    line-height: 1.5em;
+    font-weight: 300;
+}
+.abv-card .project-card{
+    width: 300px;
+}
+.abv-card .project-card img{
+    height: 80%;
+}
+.abv-card .project-card a{
+    flex-direction: column;
+}
+.abv-card .project-card .card-text
+{
+    padding: 10px;
+}
+.abv-card .project-card p{
+    display: none;
+}
+.abv-card .project-card h2{
+    display: none;
+}
+
+.button{
+    display: inline-block;
+    padding: 20px 75px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    font-size: 24pt;
+    text-align: center;
+    transition: 0.3s;
+}
+.button span{
+    transition: 0.3s;
+}
+a.button:hover{
+    color: var(--main-color-light);
+    
+}
+a.button:hover span{
+    filter: drop-shadow(0 0 15px var(--main-color-dark));
 }

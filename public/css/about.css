@@ -1,0 +1,5 @@
+/* Update Navbar color to indicate the current page */
+.navbar .main-menu ul li:nth-child(3) a
+{
+    color: var(--highlight);
+}

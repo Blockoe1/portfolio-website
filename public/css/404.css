@@ -1,3 +1,15 @@
+.box{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.box .filler
+{
+    background-color: var(--dark-color);
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
 .error404 .text-title{
     margin-top: 200px;
     color: var(--main-color-dark);

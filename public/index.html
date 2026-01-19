@@ -8,32 +8,32 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
     rel="stylesheet">
     
   <!-- Set Website Icon-->
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
   <!-- Stylesheet Imports-->
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="css/index.css" type="text/css">
 
   <!-- Import template HTML scripts -->
-  <script src="js/jquery.js"></script>
-  <script src="js/import.js"></script>
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <script src="js/import.js" type="text/javascript"></script>
+
+  <script src="js/index.js"></script>
 </head>
 <body>
-  <!-- TODO: Make Website -->
-  <div id="navbar"></div>
+  <div data-import="navbar" id="indexnavbar" class="hidden"></div>
 
-  <!-- Title and Demo Reel-->
   <section class="title">
-    <div class="background canter-absolute">
+    <div class="background center-absolute">
       <iframe src="https://www.youtube.com/embed/J4YWYsprkzU?autoplay=1&mute=1&loop=1&showinfo=0&controls=0&list=PL1SQZOgZuLBfMVfxkUQfu229kj6EhRIOI&rel=0&modestbranding" 
       frameborder="0" allowfullscreen class="center-absolute"></iframe>
       <div class="video-overlay"></div>
-      <div class="end-bleed"></div>
     </div>
+    <div class="end-bleed"></div>
     <div class="title-content container">
       <div>
         <h1 class="text-title drop-shadow">Eli Koederitz</h1>
@@ -41,27 +41,43 @@
           experiences.
         </h2>
       </div>
-      <ul>
-        <li><a href="#" class="drop-shadow text-subhead text-button">Video Game Projects</a></li>
-        <li><a href="#" class="drop-shadow text-subhead text-button">Other Projects</a></li>
-        <li><a href="#" class="drop-shadow text-subhead text-button">About</a></li>
-        <li><a href="#" class="drop-shadow text-subhead text-button">Contact</a></li>
+      <div>
+        <h2 class="text-subhead open-text drop-shadow"><a class="text-button">Press Any Button</a></h2>
+        <!-- Title Menu-->
+        <ul class="title-menu hidden">
+          <li><a href="#" class="drop-shadow text-subhead text-button">Video Game Projects</a></li>
+          <li><a href="#" class="drop-shadow text-subhead text-button">Other Projects</a></li>
+          <li><a href="about.html" class="drop-shadow text-subhead text-button">About</a></li>
+          <li><a href="#" class="drop-shadow text-subhead text-button">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-projects">
+    <div class="container-l">
+      <div class="headers">
+        <h2 class="text-subhead">Hello! Here are some of my</h2>
+        <h1 class="text-header">Featured Projects</h1>
+      </div>
+      <!-- Set new Featured Projects Here -->
+      <ul class="projects-grid">
+        <li data-import="snowmentum-card" class="abv-card"></li> <!-- First item will get more attention -->
+        <li data-import="snowmentum-card" class="abv-card"></li>
+        <li data-import="snowmentum-card" class="abv-card"></li> <!-- Middle item will get more attention -->
+        <li data-import="snowmentum-card" class="abv-card"></li>
+        <li data-import="snowmentum-card" class="abv-card"></li>
       </ul>
     </div>
   </section>
 
-  <img src="images/logo.png" alt="logo">
-
-  <!-- Featured Projects -->
-  <section class="featured-projects">
-
-  </section>
-
-  <!-- Contact Link -->
   <section class="contact-area">
-
+    <div class="container">
+      <h1 class="text-header">Let's make your vision real!</h1>
+      <a href="#" class="button"><span>Contact</span></a>
+    </div>
   </section>
   
-  <div id="footer"></div>
+  <div data-import="footer"></div>
 </body>
 </html>
