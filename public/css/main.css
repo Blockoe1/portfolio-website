@@ -8,6 +8,7 @@
     --main-color-dark: #7B45C8;
     --main-color-light: #D1B2FF;
     --highlight: #FFFAB9;
+    --page-top-header: 100px;
 }
 
 /* Default Styles*/
@@ -21,9 +22,9 @@ body{
     font-family: 'Fira Sans', sans-serif;
     font-size: 16pt;
     line-height: 1.5em;
+    color: var(--dark-color);
     background-color: var(--light-color);
     overflow-x: hidden;
-    color: var(--dark-color);
 }
 
 ul{
@@ -77,6 +78,12 @@ a{
     font-weight: 400;
     margin: 20px 0 12px 0;
     font-family: 'Fira Code', sans-serif
+}
+.text-default{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16pt;
+    line-height: 1.5em;
+    color: var(--dark-color);
 }
 .text-button{
     cursor: pointer;
@@ -177,10 +184,10 @@ a.text-button:hover{
 .button span{
     transition: 0.3s;
 }
-a.button:hover{
+a.button:hover,button.button:hover{
     color: var(--main-color-light);
     
 }
-a.button:hover span{
+a.button:hover,button.button:hover span{
     filter: drop-shadow(0 0 15px var(--main-color-dark));
 }

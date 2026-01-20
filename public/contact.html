@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Eli Koederitz's Portfolio</title>
+    <!-- Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Import FontAwesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Set Website Icon-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Stylesheet Imports-->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/contact.css" type="text/css">
+
+    <!-- Import template HTML scripts -->
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/import.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div data-import="navbar" data-script="true"></div>
+
+    <!-- Page Content -->
+     <section class="contact">
+        <div class="container">
+            <h1 class="text-header">Contact</h1>
+            <h2 class="text-subhead">Let's create what you envision!</h2>
+            <p>
+                I’m proficient in programming and game design.  I’m always open to chat, so feel free to reach out!
+            </p>
+            <div class="contact-grid">
+                <div class="align-right">
+                    <h2 class="text-subhead contact-info">koederitzb@gmail.com</h2>
+                    <h2 class="text-subhead contact-info">(785) 979-8852</h2>
+                    <h2 class="text-subhead contact-info"><i class="fa-brands fa-discord"></i> blockoe1</h2>
+                    <h2 class="text-subhead contact-info">
+                        <a href="https://www.linkedin.com/in/brandon-koederitz-646200331/"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                    </h2>
+                    <img src="images/contact.png" alt="contact">
+                </div>
+                <div>
+                    <form action="" method="post">
+                        <div class="align-left">
+                            <label class="text-subhead">Name</label>
+                            <input class="text-default text-input" type="text" name="name" placeholder="Name..." dir="ltr">
+                        </div>
+                        <div class="align-left">
+                            <label class="text-subhead">Email</label>
+                            <input class="text-default text-input" type="email" name="email" placeholder="Email..." dir="ltr">
+                        </div>
+                        <div class="align-left">
+                            <label class="text-subhead">Subject</label>
+                            <input class="text-default text-input" type="text" name="subject" placeholder="Subject..." dir="ltr">
+                        </div>
+                        <div class="align-left">
+                            <label class="text-subhead">Message</label>
+                            <textarea class="text-default text-input" name="message" dir="ltr" cols="50" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="button"><span>Submit</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <div data-import="footer-a"></div>
+</body>
+
+</html>

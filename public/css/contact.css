@@ -1,0 +1,87 @@
+/* Update Navbar color to indicate the current page */
+.navbar .main-menu ul li:nth-child(4) a
+{
+    color: var(--highlight);
+}
+
+.contact{
+    margin-top: var(--page-top-header);
+}
+
+.contact .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact .container>.text-header
+{
+    margin-bottom: 5px;
+}
+.contact .container > .text-subhead{
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.contact .contact-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px 0;
+}
+.contact .contact-grid > div{
+    padding: 20px;
+}
+.contact .contact-grid .align-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contact .contact-grid .align-right{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+.contact .contact-grid img{
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+    position: relative;
+}
+.contact .contact-grid .text-subhead{
+    text-align: right;
+}
+.contact .contact-grid a{
+    text-decoration: underline;
+}
+
+.contact .contact-grid form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.contact .contact-grid form button{
+    border-style: none;
+}
+.contact .contact-grid form label{
+    display: block;
+    margin: 5px 0 0 0;
+}
+.contact .contact-grid form label:first-child{
+    margin-top: 20px;
+}
+.contact .contact-grid form .text-input{
+    background-color: var(--light-color);
+    border-radius: 10px;
+    border: 1px solid var(--dark-color);
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-align: left;
+    padding: 5px;
+    margin: 2px 0;
+}
+.contact .contact-grid form textarea.text-input
+{
+    resize: none;
+    max-width: 500px;
+    font-size: 16pt;
+    font-family: 'Fira Sans', sans-serif;
+}
