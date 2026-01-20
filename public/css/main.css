@@ -166,9 +166,11 @@ a.text-button:hover{
 }
 .abv-card .project-card{
     width: 300px;
+    height: 300px;
 }
 .abv-card .project-card img{
     height: 80%;
+    width: auto;
 }
 .abv-card .project-card a{
     flex-direction: column;
@@ -201,7 +203,7 @@ a.text-button:hover{
 }
 a.button:hover,button.button:hover{
     color: var(--main-color-light);
-    
+    transform: var(--large-scale);
 }
 a.button:hover span{
     filter: drop-shadow(0 0 15px var(--main-color-dark));

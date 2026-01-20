@@ -90,6 +90,7 @@ section{
 {
     margin-bottom: 14vh;
     opacity: 0;
+    pointer-events: none;
 }
 .title .title-content .text-title{
     margin-bottom: 0px;
@@ -119,9 +120,14 @@ section{
     margin-top: 20px;
 }
 .featured-projects .projects-grid{
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     grid-template-columns: repeat(5, 1fr);
-    gap: 30px 50px;
+    gap: 20px 50px;
+}
+.featured-projects .projects-grid .project-card{
+    flex-basis: 50%;
 }
 
 /* Contact */

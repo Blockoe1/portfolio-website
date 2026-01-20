@@ -1,3 +1,8 @@
+.navbar .main-menu ul li:nth-child(2) > div > a
+{
+    color: var(--highlight);
+}
+
 .game-projects{
     margin-top: var(--page-top-margin);
     margin-bottom: var(--page-bottom-margin);
