@@ -3,3 +3,36 @@
 {
     color: var(--highlight);
 }
+
+.about{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.about .container-s{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.about .main-about{
+    display: flex;
+}
+.about .main-about img{
+    max-width: 450px;
+    max-width: 450px;
+    border-radius: 10px;
+    aspect-ratio: 1 / 1;
+    margin: 20px 40px;
+}
+.about .main-about h2:first-child{
+    margin-top: 20px;
+}
+.about p{
+    margin: 15px 0 10px;
+}
+.about strong{
+    font-weight: 400;
+    color: var(--main-color-dark);
+}
