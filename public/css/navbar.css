@@ -29,6 +29,7 @@
 }
 .navbar .main-menu ul{
     display: flex;
+    max-height: 70px;
 }
 .navbar .main-menu ul li a{
     padding: 5px 15px;
@@ -47,21 +48,23 @@
 
 .navbar .main-menu .project-dropdown{
     position: relative;
+    width: 100%;
 }
 .navbar .main-menu .project-dropdown-menu{
-    position: absolute;
+    /* position: absolute; */
     background-color: var(--dark-color);
     border-radius: 0 0 10px 10px;
-    padding: 100px 0 10px 0;
     z-index: -10;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    top: -50px;
+    /* top: -50px; */
+    padding-bottom: 10px;
 }
 .navbar .main-menu .project-dropdown-menu.hidden{
     display: none;
 }
 .navbar .main-menu .project-dropdown-menu a{
     font-size: 24pt;
+    line-height: 0.7em;
 }
