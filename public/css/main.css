@@ -188,6 +188,10 @@ a.button:hover,button.button:hover{
     color: var(--main-color-light);
     
 }
-a.button:hover,button.button:hover span{
+a.button:hover span{
+    filter: drop-shadow(0 0 15px var(--main-color-dark));
+}
+button.button:hover span
+{
     filter: drop-shadow(0 0 15px var(--main-color-dark));
 }

@@ -81,6 +81,11 @@ section{
     bottom: 20vh;
     opacity: 0;
 }
+.title .title-content .title-menu-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .title .title-content .title-menu
 {
     margin-bottom: 12vh;

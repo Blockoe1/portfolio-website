@@ -18,7 +18,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Set Website Icon-->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 
     <!-- Stylesheet Imports-->
     <link rel="stylesheet" href="css/main.css" type="text/css">
@@ -48,10 +48,11 @@
                     <h2 class="text-subhead contact-info">
                         <a href="https://www.linkedin.com/in/brandon-koederitz-646200331/"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
                     </h2>
-                    <img src="images/contact.png" alt="contact">
+                    <img src="assets/contact.png" alt="contact">
                 </div>
                 <div>
-                    <form action="" method="post">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="5b08d846-07f2-4660-9e33-037e98067a16">
                         <div class="align-left">
                             <label class="text-subhead">Name</label>
                             <input class="text-default text-input" type="text" name="name" placeholder="Name..." dir="ltr">
