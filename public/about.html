@@ -16,7 +16,6 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
     <!-- Stylesheet Imports-->
-     <!-- TODO: Set page CSS stylesheet -->
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/about.css" type="text/css">
 
@@ -26,9 +25,13 @@
 </head>
 
 <body>
-    <div data-import="navbar"></div>
+    <div data-import="navbar" data-script="true"></div>
 
-    <!-- Page Content -->
+    <content class="about">
+        <div class="container">
+            <h1 class="text-header">About Me</h1>
+        </div>
+    </content>
 
     <div data-import="footer"></div>
 </body>

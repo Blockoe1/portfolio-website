@@ -45,6 +45,7 @@
 }
 .footer .footer-grid ul li p{
     margin-top: 5px;
+    min-width: 410px;
 }
 .footer .large-icon{
     font-size: 32pt;

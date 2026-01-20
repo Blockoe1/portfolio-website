@@ -16,6 +16,17 @@ $(function(){
     var imports = $('[data-import]');
     $.each(imports, function() {
         var file = "imports/" + $(this).data('import') + ".html";
-        $(this).load(file);
+        var hasJs = $(this).data('script');
+        $(this).load(file, loadJs);
+
+        function loadJs()
+        {
+            if (hasJs == true)
+            {
+                console.log(hasJs);
+                var jsPath = "js/" + $(this).data('import') + ".js";
+                $.getScript(jsPath);
+            }
+        }
     })
 })
