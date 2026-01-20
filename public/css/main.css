@@ -8,7 +8,9 @@
     --main-color-dark: #7B45C8;
     --main-color-light: #D1B2FF;
     --highlight: #FFFAB9;
-    --page-top-header: 100px;
+    --page-top-margin: 100px;
+    --page-bottom-margin: 75px;
+
 }
 
 /* Default Styles*/
@@ -16,6 +18,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 body{
@@ -52,6 +59,12 @@ a{
     max-width: 70%;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.center-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .text-title
@@ -103,8 +116,8 @@ a.text-button:hover{
 }
 
 .project-card{
-    width: 700px;
-    height: 300px;
+    width: 600px;
+    height: 230px;
     flex-shrink: 1;
 }
 .project-card a{
@@ -124,10 +137,10 @@ a.text-button:hover{
     transform: var(--large-scale);
 }
 .project-card img{
-    height: 100%;
+    width: 50%;
 }
 .project-card .card-text{
-    padding: 30px;
+    padding: 20px;
     height: 100%;
     text-align: center;
 }
@@ -143,9 +156,10 @@ a.text-button:hover{
 }
 .project-card .text-subhead{
     font-size: 16pt;
+    margin: 10px 0 7px;
 }
 .project-card p{
-    font-size: 12pt;
+    font-size: 11pt;
     text-align: left;
     line-height: 1.5em;
     font-weight: 300;
@@ -172,7 +186,7 @@ a.text-button:hover{
 
 .button{
     display: inline-block;
-    padding: 20px 75px;
+    padding: 20px;
     border-radius: 10px;
     cursor: pointer;
     background-color: var(--dark-color);
@@ -180,6 +194,7 @@ a.text-button:hover{
     font-size: 24pt;
     text-align: center;
     transition: 0.3s;
+    min-width: 300px;
 }
 .button span{
     transition: 0.3s;

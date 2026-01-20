@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - Eli Koederitz's Portfolio</title>
+    <!-- Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Set Website Icon-->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
+    <!-- Stylesheet Imports-->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/game-projects.css" type="text/css">
+
+    <!-- Import template HTML scripts -->
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/import.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div data-import="navbar" data-script="true"></div>
+
+    <!-- Page Content -->
+     <section class="game-projects">
+        <div class="container center-content">
+            <h1 class="text-header">Games</h1>
+            <p>
+                Take a look at all of the digital games I’ve worked on. Each category is organized from most recent (left) to least
+                recent (right).
+            </p>
+            <div class="navigation-buttons">
+                <a href="#video-games" class="button">Video Games</a>
+                <a href="#prototypes" class="button">Prototypes</a>
+            </div>
+            <ul class="project-categories">
+                <li class="center-content" id="video-games">
+                    <h1 class="text-header">Video Games</h1>
+                    <ul class="project-grid">
+                        <!-- Video Games List -->
+                        <li data-import="cards/snowmentum-card"></li>
+                        <li data-import="cards/snowmentum-card"></li>
+                        <li data-import="cards/snowmentum-card"></li>
+                        <li data-import="cards/snowmentum-card"></li>
+                    </ul>
+                </li>
+                <li class="center-content" id="prototypes">
+                    <h1 class="text-header">Prototypes</h1>
+                    <ul class="project-grid">
+                        <!-- Prototypes List -->
+                        <li data-import="cards/snowmentum-card"></li>
+                        <li data-import="cards/snowmentum-card"></li>
+                        <li data-import="cards/snowmentum-card"></li>
+                        <li data-import="cards/snowmentum-card"></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+     </section>
+
+    <div data-import="footer"></div>
+</body>
+
+</html>

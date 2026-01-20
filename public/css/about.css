@@ -5,14 +5,11 @@
 }
 
 .about{
-    margin-top: var(--page-top-header);
-    margin-bottom: 100px;
+    margin-top: var(--page-top-margin);
+    margin-bottom: var(--page-bottom-margin);
 }
 
 .about .container-s{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 60%;
 }
 

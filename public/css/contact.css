@@ -5,14 +5,10 @@
 }
 
 .contact{
-    margin-top: var(--page-top-header);
+    margin-top: var(--page-top-margin);
+    margin-bottom: var(--page-bottom-margin);
 }
 
-.contact .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .contact .container>.text-header
 {
     margin-bottom: 5px;
@@ -25,7 +21,6 @@
 .contact .contact-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 20px 0;
 }
 .contact .contact-grid > div{
     padding: 20px;
