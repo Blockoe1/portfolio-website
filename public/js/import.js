@@ -15,16 +15,15 @@
 $(function(){
     var imports = $('[data-import]');
     $.each(imports, function() {
-        var file = "imports/" + $(this).data('import') + ".html";
-        var hasJs = $(this).data('script');
+        var file = $(this).data('import') + ".html";
+        var jsPath = $(this).data('script') + ".js";
         $(this).load(file, loadJs);
 
         function loadJs()
         {
-            if (hasJs == true)
+            // If no script is specified, ignore it.
+            if (jsPath != "undefined.js")
             {
-                console.log(hasJs);
-                var jsPath = "js/" + $(this).data('import') + ".js";
                 $.getScript(jsPath);
             }
         }

@@ -3,7 +3,7 @@
     background-color: var(--dark-color);
     color: var(--light-color);
     padding: 15px 0;
-    border-radius: 10px 10px 0 0;
+    border-radius: var(--standard-border-radius) var(--standard-border-radius) 0 0;
     margin-top: 30px;
 }
 .footer .container-s{
@@ -16,6 +16,6 @@
 }
 .footer i
 {
-    font-size: 24pt;
+    font-size: var(--text-m-size);
     color: var(--light-color);
 }

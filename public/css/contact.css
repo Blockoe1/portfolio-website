@@ -1,12 +1,7 @@
 /* Update Navbar color to indicate the current page */
-.navbar .main-menu ul li:nth-child(4) a
+.navbar .main-menu ul li:nth-child(4) a:not(:hover)
 {
     color: var(--highlight);
-}
-
-.contact{
-    margin-top: var(--page-top-margin);
-    margin-bottom: var(--page-bottom-margin);
 }
 
 .contact .container>.text-header
@@ -38,7 +33,7 @@
 .contact .contact-grid img{
     width: 450px;
     height: 450px;
-    border-radius: 10px;
+    border-radius: var(--standard-border-radius);
     position: relative;
 }
 .contact .contact-grid .text-subhead{
@@ -66,7 +61,7 @@
 }
 .contact .contact-grid form .text-input{
     background-color: var(--light-color);
-    border-radius: 10px;
+    border-radius: var(--standard-border-radius);
     border: 1px solid var(--dark-color);
     box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     text-align: left;
@@ -77,6 +72,6 @@
 {
     resize: none;
     max-width: 500px;
-    font-size: 16pt;
+    font-size: var(--text-s-size);
     font-family: 'Fira Sans', sans-serif;
 }

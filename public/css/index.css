@@ -1,7 +1,8 @@
 @import "https://unpkg.com/semantic-props@beta";
 
 /* Update Navbar color to indicate the current page */
-.navbar .main-menu ul li:nth-child(1) a{
+.navbar .main-menu ul li:nth-child(1) a:not(:hover)
+{
     color: var(--highlight);
 }
 

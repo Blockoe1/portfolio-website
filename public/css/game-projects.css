@@ -1,11 +1,6 @@
-.navbar .main-menu ul li:nth-child(2) > div > a
+.navbar .main-menu ul li:nth-child(2) > div > a:not(:hover)
 {
     color: var(--highlight);
-}
-
-.game-projects{
-    margin-top: var(--page-top-margin);
-    margin-bottom: var(--page-bottom-margin);
 }
 
 .game-projects .container > .text-header{

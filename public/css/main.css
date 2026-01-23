@@ -1,4 +1,8 @@
 @import "https://unpkg.com/semantic-props@beta";
+/* Import Header and Navbar Styles*/
+@import "navbar.css";
+@import "footer.css";
+@import "footer-a.css";
 
 /* Custom Variables*/
 :root{
@@ -8,9 +12,23 @@
     --main-color-dark: #7B45C8;
     --main-color-light: #D1B2FF;
     --highlight: #FFFAB9;
+
     --page-top-margin: 100px;
     --page-bottom-margin: 75px;
 
+    --standard-border-radius: 10px;
+
+    --text-xl-size: 48pt;
+    --text-l-size: 30pt;
+    --text-m-size: 24pt;
+    --text-s-size: 16pt;
+
+    --weight-bold: 600;
+    --weight-semibold: 400;
+    --weight-normal: 300;
+
+    --selected-drop-shadow: drop-shadow(0 0 15px var(--main-color-dark));
+    --button-transition: 0.3s;
 }
 
 /* Default Styles*/
@@ -27,11 +45,14 @@ html{
 
 body{
     font-family: 'Fira Sans', sans-serif;
-    font-size: 16pt;
+    font-size: var(--text-s-size);
     line-height: 1.5em;
     color: var(--dark-color);
     background-color: var(--light-color);
     overflow-x: hidden;
+}
+img{
+    border-radius: var(--standard-border-radius);
 }
 
 ul{
@@ -42,7 +63,6 @@ a{
     text-decoration: none;
     color: var(--main-color-dark);
 }
-
 
 /* Utilities */
 .container-l{
@@ -71,48 +91,57 @@ a{
 {
     font-size: 96pt;
     line-height: 1em;
-    font-weight: 600;
+    font-weight: var(--weight-bold);
     margin: 50px 0 25px 0;
     font-family: 'Fira Code', sans-serif
 }
 .text-header
 {
-    font-size: 48pt;
+    font-size: var(--text-xl-size);
     line-height: 1.2em;
-    font-weight: 600;
+    font-weight: var(--weight-bold);
     margin: 40px 0 20px 0;
     color: var(--main-color-dark);
     font-family: 'Fira Code', sans-serif
 }
 .text-subhead
 {
-    font-size: 30pt;
+    font-size: var(--text-l-size);
     line-height: 1.2em;
-    font-weight: 400;
+    font-weight: var(--weight-semibold);
     margin: 20px 0 12px 0;
     font-family: 'Fira Code', sans-serif
 }
 .text-default{
     font-family: 'Fira Sans', sans-serif;
-    font-size: 16pt;
+    font-size: var(--text-s-size);
     line-height: 1.5em;
     color: var(--dark-color);
 }
 .text-button{
     cursor: pointer;
-    transition: 0.3s;
+    transition: var(--button-transition);
     text-align: center;
 }
 a.text-button:hover{
     color: var(--main-color-light);
-    filter: drop-shadow(0 0 15px var(--main-color-dark));
+    filter: var(--selected-drop-shadow);
 }
 
-.logo img
+.page-content{
+    margin-top: var(--page-top-margin);
+    margin-bottom: var(--page-bottom-margin);
+}
+
+.logo
 {
     width: 60px;
     height: 60px;
-    border-radius: 10px;
+    border-radius: var(--standard-border-radius);
+}
+.logo:not(img){
+    background-size: contain;
+    background-image: url("../assets/logo.png");
 }
 
 .project-card{
@@ -128,7 +157,7 @@ a.text-button:hover{
     align-items: center;
     transition: 0.1s;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: var(--standard-border-radius);
     border: 3px solid var(--dark-color);
     background-color: var(--dark-color);
 }
@@ -145,17 +174,17 @@ a.text-button:hover{
     text-align: center;
 }
 .project-card .text-header{
-    font-size: 24pt;
+    font-size: var(--text-m-size);
     margin: auto;
     transition: 0.1s;
     color: var(--light-color);
 }
 .project-card a:hover .text-header{
     color: var(--main-color-light);
-    filter: drop-shadow(0 0 15px var(--main-color-dark));
+    filter: var(--selected-drop-shadow);
 }
 .project-card .text-subhead{
-    font-size: 16pt;
+    font-size: var(--text-s-size);
     margin: 10px 0 7px;
 }
 .project-card p{
@@ -189,26 +218,88 @@ a.text-button:hover{
 .button{
     display: inline-block;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: var(--standard-border-radius);
     cursor: pointer;
     background-color: var(--dark-color);
     color: var(--light-color);
-    font-size: 24pt;
+    font-size: var(--text-m-size);
     text-align: center;
-    transition: 0.3s;
+    transition: var(--button-transition);
     min-width: 300px;
+    margin: 20px;
 }
 .button span{
-    transition: 0.3s;
+    transition: var(--button-transition);
 }
 a.button:hover,button.button:hover{
     color: var(--main-color-light);
     transform: var(--large-scale);
 }
 a.button:hover span{
-    filter: drop-shadow(0 0 15px var(--main-color-dark));
+    filter: var(--selected-drop-shadow);
 }
 button.button:hover span
 {
-    filter: drop-shadow(0 0 15px var(--main-color-dark));
+    filter: var(--selected-drop-shadow);
+}
+
+.slideshow{
+    position: relative;
+    border-radius: var(--standard-border-radius);
+    overflow: hidden;
+    background-color: var(--dark-color);
+    height: 500px;
+    aspect-ratio: 16 / 9;
+}
+
+.slideshow .slide-arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 20px;
+    border-radius: var(--standard-border-radius);
+    transition: var(--button-transition);
+    margin: 10px;
+    z-index: 10;
+}
+.slideshow .slide-arrow:hover{
+    color: var(--main-color-light);
+    transform: var(--large-scale) translate(0, -50%);
+}
+.slideshow .slide-arrow:hover span
+{
+    filter: var(--selected-drop-shadow);
+}
+.slideshow .slide-arrow.next{
+    right: 0;
+}
+.slideshow .slide{
+    display: none;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    
+}
+.slideshow .slide.transition{
+    transition: 0.6s ease-out;
+}
+
+.slideshow .slide.current{
+    left: 0;
+    display: inline-block;
+}
+.slideshow .slide.prev{
+    left: 100%;
+    display: inline-block;
+}
+.slideshow .slide.next{
+    left: -100%;
+    display: inline-block;
+}
+.slideshow .slide img{
+    height: 100%;
+    border-radius: 0;
 }
