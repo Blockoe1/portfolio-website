@@ -15,7 +15,7 @@
 
     --page-top-margin: 100px;
     --page-bottom-margin: 75px;
-    --page-top-margin-mobile: 75px;
+    --page-top-margin-mobile: 100px;
     --page-bottom-margin-mobile: 30px;
 
     --standard-border-radius: 10px;
@@ -153,8 +153,8 @@ a.text-button:hover{
 }
 
 .project-card{
-    width: 600px;
-    height: 230px;
+    max-width: 600px;
+    max-height: 230px;
     flex-shrink: 1;
 }
 .project-card a{
@@ -201,6 +201,22 @@ a.text-button:hover{
     line-height: 1.5em;
     font-weight: 300;
 }
+@media (max-width: 910px) 
+{
+    .project-card
+    {
+        max-width: 300px;
+        max-height: 475px;
+    }
+    .project-card a
+    {
+        flex-direction: column;
+    }
+    .project-card img{
+        width: 100%;
+    }
+}
+
 .abv-card{
     flex-shrink: 1;
 }
@@ -234,6 +250,7 @@ a.text-button:hover{
     background-color: var(--dark-color);
     color: var(--light-color);
     font-size: var(--text-m);
+    line-height: 1em;
     text-align: center;
     transition: var(--button-transition);
     min-width: 300px;
@@ -252,6 +269,12 @@ a.button:hover span{
 button.button:hover span
 {
     filter: var(--selected-drop-shadow);
+}
+@media (max-width: 910px) 
+{
+    .button{
+        min-width: 150px;
+    }
 }
 
 .slideshow{

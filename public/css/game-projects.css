@@ -3,8 +3,16 @@
     color: var(--highlight);
 }
 
+.game-projects .container:last-child{
+    max-width: 1400px;
+}
+
 .game-projects .container > .text-header{
     margin-bottom: 0px;
+}
+.game-projects .container>p
+{
+    text-align: center;
 }
 
 .game-projects .navigation-buttons{
@@ -25,4 +33,15 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
+}
+
+@media (max-width: 910px) {
+    .game-projects .navigation-buttons{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .game-projects .project-categories>li
+    {
+        margin: 30px 0;
+    }
 }

@@ -35,7 +35,7 @@
 @media (max-width: 1015px) 
 {
     .about .container-s{
-        padding: 40px;
+        padding: 0 40px;
     }
     .about .main-about{
         flex-direction: column;
