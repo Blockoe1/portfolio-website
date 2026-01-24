@@ -15,6 +15,8 @@
 
     --page-top-margin: 100px;
     --page-bottom-margin: 75px;
+    --page-top-margin-mobile: 75px;
+    --page-bottom-margin-mobile: 30px;
 
     --standard-border-radius: 10px;
 
@@ -23,8 +25,6 @@
     --text-m: 24pt;
     --text-s: 16pt;
     --text-xs: 12pt;
-    
-    
 
     --weight-bold: 600;
     --weight-semibold: 400;
@@ -338,6 +338,12 @@ button.button:hover span
         text-align: center;
         font-size: var(--text-m);
         margin: 10px 0 5px;
+    }
+
+    .page-content
+    {
+        margin-top: var(--page-top-margin-mobile);
+        margin-bottom: var(--page-bottom-margin-mobile);
     }
 }
 

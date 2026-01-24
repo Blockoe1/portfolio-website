@@ -10,13 +10,16 @@
 
 .about .main-about{
     display: flex;
+    width: 100%;
+    flex-shrink: 1;
 }
 .about .main-about img{
     max-width: 450px;
-    max-width: 450px;
-    border-radius: var(--standard-border-radius);
+    max-height: 450px;
     aspect-ratio: 1 / 1;
     margin: 20px 40px;
+    flex-shrink: 1;
+    object-fit: contain;
 }
 .about .main-about h2:first-child{
     margin-top: 20px;
@@ -27,4 +30,22 @@
 .about strong{
     font-weight: 400;
     color: var(--main-color-dark);
+}
+
+@media (max-width: 1015px) 
+{
+    .about .container-s{
+        padding: 40px;
+    }
+    .about .main-about{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about .main-about img{
+        max-width: 100%;
+        
+    }
+    .about .main-about .text-subhead{
+        text-align: center;
+    }
 }
