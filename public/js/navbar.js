@@ -16,7 +16,25 @@ function init()
     let dropdown = document.querySelector(".project-dropdown");
     dropdown.addEventListener("mouseover", enableDropdown)
     dropdown.addEventListener("mouseout", disableDropdown);
-    console.log(window.innerWidth);
+
+    // Setup Hamburger Menu
+    const hamburgerButton = document.querySelector(".hamburger-button");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    hamburgerButton.addEventListener("click", openMobileMenu);
+
+    function openMobileMenu()
+    {
+        mobileMenu.classList.toggle("active");
+    }
+
+    // Cose the mobile menu when the user clicks out of it.
+    window.onclick = function (event)
+    {
+        if (!event.target.closest(".navbar") && mobileMenu.classList.contains("active"))
+        {
+            mobileMenu.classList.remove("active");
+        }
+    }
 }
 
 init();
