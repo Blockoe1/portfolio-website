@@ -16,6 +16,7 @@ function init()
     let dropdown = document.querySelector(".project-dropdown");
     dropdown.addEventListener("mouseover", enableDropdown)
     dropdown.addEventListener("mouseout", disableDropdown);
+    console.log(window.innerWidth);
 }
 
 init();

@@ -138,6 +138,7 @@ a.text-button:hover{
     width: 60px;
     height: 60px;
     border-radius: var(--standard-border-radius);
+    flex-shrink: 0;
 }
 .logo:not(img){
     background-size: contain;
@@ -284,7 +285,7 @@ button.button:hover span
     
 }
 .slideshow .slide.transition{
-    transition: 0.6s ease-out;
+    transition: 0.3s ease-out;
 }
 
 .slideshow .slide.current{

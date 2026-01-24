@@ -75,3 +75,18 @@
     font-size: var(--text-m-size);
     line-height: 0.7em;
 }
+
+@media (max-width: 1380px) {
+    .navbar .logo-link h2
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 670px)
+{
+    
+    .navbar .main-menu{
+        display: none;
+    }
+}
