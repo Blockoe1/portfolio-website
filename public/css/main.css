@@ -282,7 +282,8 @@ button.button:hover span
     border-radius: var(--standard-border-radius);
     overflow: hidden;
     background-color: var(--dark-color);
-    height: 500px;
+    width: 100%;
+    max-width: 1000px;
     aspect-ratio: 16 / 9;
 }
 
@@ -315,7 +316,6 @@ button.button:hover span
     position: absolute;
     left: 0;
     height: 100%;
-    
 }
 .slideshow .slide.transition{
     transition: 0.3s ease-out;
@@ -338,6 +338,8 @@ button.button:hover span
     border-radius: 0;
 }
 
+
+/* General Media Queries*/
 @media (max-width: 1350px) {
     /* Text */
     .text-title
