@@ -15,7 +15,7 @@
     justify-content: space-between;
 }
 .navbar .text-subhead{
-    font-size: var(--text-m-size);
+    font-size: var(--text-m);
 }
 
 .navbar .logo-link{
@@ -72,7 +72,7 @@
     display: none;
 }
 .navbar .main-menu .project-dropdown-menu a{
-    font-size: var(--text-m-size);
+    font-size: var(--text-m);
     line-height: 0.7em;
 }
 .navbar .hamburger-button{
@@ -111,7 +111,7 @@
     color: var(--main-color-light);
 }
 .navbar .mobile-menu .sub-item{
-    font-size: var(--text-s-size);
+    font-size: var(--text-s);
     line-height: 1em;
 }
 .navbar .mobile-menu ul li.spacer

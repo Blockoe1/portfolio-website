@@ -9,6 +9,7 @@
 .footer-a .container-s{
     display: flex;
     justify-content: space-between;
+    flex-direction: row-reverse;
 }
 .footer-a .socials ul{
     display: flex;
@@ -16,6 +17,15 @@
 }
 .footer-a i
 {
-    font-size: var(--text-m-size);
+    font-size: var(--text-m);
     color: var(--light-color);
+}
+
+@media (max-width: 890px) 
+{   
+    .footer-a .container-s{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }

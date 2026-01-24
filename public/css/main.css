@@ -18,10 +18,13 @@
 
     --standard-border-radius: 10px;
 
-    --text-xl-size: 48pt;
-    --text-l-size: 30pt;
-    --text-m-size: 24pt;
-    --text-s-size: 16pt;
+    --text-xl: 48pt;
+    --text-l: 30pt;
+    --text-m: 24pt;
+    --text-s: 16pt;
+    --text-xs: 12pt;
+    
+    
 
     --weight-bold: 600;
     --weight-semibold: 400;
@@ -29,6 +32,8 @@
 
     --selected-drop-shadow: drop-shadow(0 0 15px var(--main-color-dark));
     --button-transition: 0.3s;
+
+    --mobile-size: 890px;
 }
 
 /* Default Styles*/
@@ -45,7 +50,7 @@ html{
 
 body{
     font-family: 'Fira Sans', sans-serif;
-    font-size: var(--text-s-size);
+    font-size: var(--text-s);
     line-height: 1.5em;
     color: var(--dark-color);
     background-color: var(--light-color);
@@ -97,24 +102,26 @@ a{
 }
 .text-header
 {
-    font-size: var(--text-xl-size);
+    font-size: var(--text-xl);
     line-height: 1.2em;
     font-weight: var(--weight-bold);
     margin: 40px 0 20px 0;
     color: var(--main-color-dark);
-    font-family: 'Fira Code', sans-serif
+    font-family: 'Fira Code', sans-serif;
+    text-wrap: balance;
 }
 .text-subhead
 {
-    font-size: var(--text-l-size);
+    font-size: var(--text-l);
     line-height: 1.2em;
     font-weight: var(--weight-semibold);
     margin: 20px 0 12px 0;
-    font-family: 'Fira Code', sans-serif
+    font-family: 'Fira Code', sans-serif;
+    text-wrap: balance;
 }
 .text-default{
     font-family: 'Fira Sans', sans-serif;
-    font-size: var(--text-s-size);
+    font-size: var(--text-s);
     line-height: 1.5em;
     color: var(--dark-color);
 }
@@ -175,7 +182,7 @@ a.text-button:hover{
     text-align: center;
 }
 .project-card .text-header{
-    font-size: var(--text-m-size);
+    font-size: var(--text-m);
     margin: auto;
     transition: 0.1s;
     color: var(--light-color);
@@ -185,7 +192,7 @@ a.text-button:hover{
     filter: var(--selected-drop-shadow);
 }
 .project-card .text-subhead{
-    font-size: var(--text-s-size);
+    font-size: var(--text-s);
     margin: 10px 0 7px;
 }
 .project-card p{
@@ -193,6 +200,9 @@ a.text-button:hover{
     text-align: left;
     line-height: 1.5em;
     font-weight: 300;
+}
+.abv-card{
+    flex-shrink: 1;
 }
 .abv-card .project-card{
     width: 300px;
@@ -223,7 +233,7 @@ a.text-button:hover{
     cursor: pointer;
     background-color: var(--dark-color);
     color: var(--light-color);
-    font-size: var(--text-m-size);
+    font-size: var(--text-m);
     text-align: center;
     transition: var(--button-transition);
     min-width: 300px;
@@ -303,4 +313,56 @@ button.button:hover span
 .slideshow .slide img{
     height: 100%;
     border-radius: 0;
+}
+
+@media (max-width: 1350px) {
+    /* Text */
+    .text-title
+    {
+        font-size: 64pt;
+    }
+}
+
+@media (max-width: 920px) 
+{
+    /* Text */
+    .text-title{
+        font-size: 54pt;
+    }
+    .text-header{
+        text-align: center;
+        font-size: var(--text-l);
+        margin: 20px 0 10px;
+    }
+    .text-subhead{
+        text-align: center;
+        font-size: var(--text-m);
+        margin: 10px 0 5px;
+    }
+}
+
+@media (max-width: 580px) 
+{
+    /* Text */
+    .text-title
+    {
+        font-size:48pt;
+    }
+
+    .text-header
+    {
+        text-align: center;
+        font-size: var(--text-m);
+        margin: 10px 0 5px;
+    }
+
+    .text-subhead
+    {
+        text-align: center;
+        font-size: var(--text-s);
+        margin: 5px 0 2px;
+    }
+    body{
+        font-size: var(--text-xs);
+    }
 }
