@@ -14,11 +14,11 @@ class Slideshow
         const prevButton = slideshow.querySelector(".prev");
         const nextButton = slideshow.querySelector(".next");
 
-        prevButton.addEventListener("click", () => { this.moveSlide(1); });
-        nextButton.addEventListener("click", () => { this.moveSlide(-1); });
+        prevButton.addEventListener("click", () => { this.moveSlide(-1); });
+        nextButton.addEventListener("click", () => { this.moveSlide(1); });
 
         // Set up so it loops every couple seconds.
-        this.timeout = setTimeout(() => { this.moveSlide(-1); }, SLIDESHOW_TIME);
+        this.timeout = setTimeout(() => { this.moveSlide(1); }, SLIDESHOW_TIME);
     }
 
     moveSlide(n)
@@ -57,7 +57,7 @@ class Slideshow
 
             // When the slide is set, clear any present timeout and set a new one.
             clearTimeout(this.timeout);
-            this.timeout = setTimeout(() => { this.moveSlide(-1); }, SLIDESHOW_TIME);
+            this.timeout = setTimeout(() => { this.moveSlide(1); }, SLIDESHOW_TIME);
 
             // Add a delay so that people can't spam
             this.canSwap = false;

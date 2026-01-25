@@ -10,6 +10,11 @@
     width: 70%;
 }
 
+.project .row-flex{
+    flex-direction: row;
+    justify-content: center;
+}
+
 .project .title{
     text-align: center;
     width: 100%;
@@ -18,15 +23,18 @@
     margin-bottom: 0px;
 }
 .project .title .text-subhead{
-    max-width: 900px;
     margin-top: 0px;
     margin-bottom: var(--section-spacing);
 }
-.project .title .fill-img{
+.project .fill-img{
     width: 100%;
-    aspect-ratio: 16 / 9;
-    border-radius: var(--standard-border-radius);
+    /* aspect-ratio: 16 / 9; */
     background-color: var(--dark-color);
+    border-radius: var(--standard-border-radius);
+}
+.project .title iframe.fill-img
+{
+    aspect-ratio: 16 / 9;
 }
 
 .project .info .info-grid{
@@ -89,6 +97,11 @@
 .project .contributions ul{
     list-style: inside;
     width: 100%;
+}
+.project .contributions ul li
+{
+    padding-left: 1.4em;
+    text-indent: -1.4em;
 }
 
 .project .free{
