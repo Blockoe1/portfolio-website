@@ -223,6 +223,11 @@ a.text-button:hover{
     }
 }
 
+.small-text .project-card .text-header{
+    font-size: 20pt;
+    margin: 3px;
+}
+
 .abv-card{
     flex-shrink: 1;
 }
@@ -240,7 +245,7 @@ a.text-button:hover{
 }
 .abv-card .project-card .card-text
 {
-    padding: 10px;
+    padding: 11px;
 }
 .abv-card .project-card p{
     display: none;

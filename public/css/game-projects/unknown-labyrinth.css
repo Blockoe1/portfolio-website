@@ -3,7 +3,7 @@
     margin: 20px;
 }
 @media (max-width: 920px) {
-    .project .free .row-flex{
+    .project .row-flex{
         flex-direction: column;
     }
     .project .free img

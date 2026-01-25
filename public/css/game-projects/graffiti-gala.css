@@ -5,7 +5,7 @@
     gap: 30px;
     width: 100%;
     max-height: 700px;
-
+    justify-items: center;
 }
 .project .free .vid-grid img{
     height: 100%;
