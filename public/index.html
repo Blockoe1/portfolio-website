@@ -12,20 +12,20 @@
     rel="stylesheet">
     
   <!-- Set Website Icon-->
-  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/public/assets/favicon.ico" type="image/x-icon">
 
   <!-- Stylesheet Imports-->
-  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="/public/css/main.css" type="text/css">
   <link rel="stylesheet" href="css/index.css" type="text/css">
 
   <!-- Import template HTML scripts -->
-  <script src="js/jquery.js" type="text/javascript"></script>
-  <script src="js/import.js" type="text/javascript"></script>
+  <script src="/public/js/jquery.js" type="text/javascript"></script>
+  <script src="/public/js/import.js" type="text/javascript"></script>
 
   <script src="js/index.js"></script>
 </head>
 <body>
-  <div data-import="imports/navbar" data-script="js/navbar" id="indexnavbar" class="hidden"></div>
+  <div data-import="/public/imports/navbar" data-script="/public/js/navbar" id="indexnavbar" class="hidden"></div>
 
   <section class="title">
     <div class="background center-absolute">
@@ -61,10 +61,10 @@
       </div>
       <!-- Set new Featured Projects Here -->
       <ul class="projects-grid">
-        <li data-import="imports/cards/snowmentum-card" class="abv-card"></li> <!-- First item will get more attention -->
-        <li data-import="imports/cards/graffiti-gala-card" class="abv-card"></li> <!-- Middle item will get more attention -->
-        <li data-import="imports/cards/carrie-in-peril-card" class="abv-card small-text"></li> 
-        <li data-import="imports/cards/twin-orbit-card" class="abv-card"></li>
+        <li data-import="game-projects/snowmentum/card" class="abv-card"></li> <!-- First item will get more attention -->
+        <li data-import="game-projects/graffiti-gala/card" class="abv-card"></li> <!-- Middle item will get more attention -->
+        <li data-import="game-projects/carrie-in-peril/card" class="abv-card small-text"></li> 
+        <li data-import="game-projects/twin-orbit/card" class="abv-card"></li>
       </ul>
     </div>
   </section>
@@ -72,10 +72,10 @@
   <section class="contact-area">
     <div class="container center-content">
       <h1 class="text-header">Let's work together!</h1>
-      <a href="#" class="button"><span>Contact</span></a>
+      <a href="/public/contact.html" class="button"><span>Contact</span></a>
     </div>
   </section>
   
-  <div data-import="imports/footer"></div>
+  <div data-import="/public/imports/footer"></div>
 </body>
 </html>

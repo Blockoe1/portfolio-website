@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starward Reach - Eli Koederitz's Portfolio</title>
+    <!-- TODO#: Set Page Title-->
+    <title>Grubitecht - Eli Koederitz's Portfolio</title>
     <!-- Font Import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +14,7 @@
         rel="stylesheet">
 
     <!-- Set Website Icon-->
-    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/public/assets/favicon.ico" type="image/x-icon">
 
     <!-- Import FontAwesome Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -21,28 +22,28 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Stylesheet Imports-->
-    <link rel="stylesheet" href="../css/main.css" type="text/css">
-    <link rel="stylesheet" href="../css/project.css" type="text/css">
+    <link rel="stylesheet" href="/public/css/main.css" type="text/css">
+    <link rel="stylesheet" href="/public/css/project.css" type="text/css">
 
     <!-- Import template HTML scripts -->
-    <script src="../js/jquery.js" type="text/javascript"></script>
-    <script src="../js/import.js" type="text/javascript"></script>
-    <script src="../js/slideshow.js" type="text/javascript"></script>
+    <script src="/public/js/jquery.js" type="text/javascript"></script>
+    <script src="/public/js/import.js" type="text/javascript"></script>
+    <script src="/public/js/slideshow.js" type="text/javascript"></script>
 </head>
 
 <body>
-    <div data-import="../imports/navbar" data-script="../js/navbar"></div>
+    <div data-import="/public/imports/navbar" data-script="/public/js/navbar"></div>
 
     <!-- Page Content -->
     <div class="project page-content">
         <div class="container-s center-content">
             <section class="title center-content">
                 <!-- # Title -->
-                <h1 class="text-header">Starward Reach</h1>
+                <h1 class="text-header">Grubitecht</h1>
                 <!-- # Tagline -->
-                <h2 class="text-subhead">Help a young girl reach for the stars in this 2D hand-drawn platformer roguelike!</h2>
-                <img src="../assets/starward-reach/banner.png" alt="starward-reach-banner" class="fill-img">
-                <!-- <iframe src="" frameborder="0" class="fill-img"></iframe> -->
+                <h2 class="text-subhead">Defend your village from incoming insect invaders by moving buildings in this 3D grid-based RTS.</h2>
+                <!-- <img src="" alt="" class="fill-img"> -->
+                <iframe src="https://www.youtube.com/embed/qJqYnl7TmR4?si=9nCNoGGbPxymRXem" frameborder="0" class="fill-img"></iframe>
             </section>
     
             <section class="info">
@@ -51,7 +52,7 @@
                     <h2 class="text-subhead"><i class="fa-solid fa-people-group"></i>1</h2>
                     <div class="divider"></div>
                     <!-- # Project Duration -->
-                    <h2 class="text-subhead"><i class="fa-solid fa-clock"></i>3&nbsp;Months</h2>
+                    <h2 class="text-subhead"><i class="fa-solid fa-clock"></i>4&nbsp;Months</h2>
                     <div class="divider"></div>
                     <!-- # Game Engine -->
                     <h2 class="text-subhead"><i class="fa-solid fa-laptop"></i>Unity</h2>
@@ -61,9 +62,11 @@
                     <!-- # Programs Used -->
                     <li class="text-subhead">Programs Used:</li>
                     <li>Visual Studio</li>
-                    <li>GIMP</li>
                     <li>Trello</li>
-                    <li>Audacity</li>
+                    <li>GitHub</li>
+                    <li>Blockbench</li>
+                    <li>GIMP</li>
+                    <li>MediBang Paint</li>
                 </ul>
             </section>
         </div>
@@ -72,20 +75,18 @@
         <section class="description container-p">
             <!-- # Game Description -->
             <p>
-                Reach for the stars!  In Starward Reach, you play as a young girl climbing the sky to reach the stars.  As you ascend, you'll gather
-                new movement abilities that will help you climb.  But beware!  If you're shocked by the growing storm clouds or the accelerating rising
-                storm, you'll be sent back too earth.  Keep climbing and try to get as high a score as you can!
+                Your village is under attack by a legion of insect invaders!  Play as a group of grub architects determined to help their village by moving
+                various defensive structures around to adapt the town's defenses to incoming waves of enemies.  Will your efforts allow the villagers to
+                see another day?
             </p>
             <!-- # Project Description-->
             <p>
-                This game was made during the Fall 2024 Semester for my Intro to Game Development class at Bradley.  Since I already had experience
-                with Unity going into this class, I decided to challenge myself for this project by making all the art by hand and figuring out how to
-                make procedurally generated levels.
+                This project was made for my Intro to Game Scripting class at Bradley.
             </p>
         </section>
         <!-- # Download Link -->
         <div class="center-content">
-            <a href="https://blockoe1.itch.io/starward-reach" target="_blank" class="button">
+            <a href="https://blockoe1.itch.io/grubitecht" target="_blank" class="button">
                 Download
             </a>
         </div>
@@ -93,10 +94,11 @@
         <section class="contributions container-p">
             <h2 class="text-subhead">My Contributions: </h2>
             <ul>
-                <li>Developed the game's core design and code.</li>
-                <li>Programmed full <strong>procedural generation</strong> of&nbsp;levels.</li>
-                <li>Drew and animated <strong>hand-drawn</strong> art assets.</li>
-                <li>Managed tasks and project milestones.</li>
+                <li>Developed a voxel-style <strong>level building tool</strong> based on the Unity Tilemap&nbsp;system.</li>
+                <li>Utilized <strong>polymorphism</strong> to create adaptable structure UI displays.</li>
+                <li>Implemented A* pathfinding <strong>algorithms</strong> for enemy movement.</li>
+                <li>Balanced enemy waves based on player feedback.</li>
+                <li>Coded unique enemy and structure behaviors.</li>
             </ul>
         </section>
     
@@ -110,16 +112,17 @@
                     <div class="slide-arrow next">
                         <span>&#10095;</span>
                     </div>
-                    <div class="slide current"><img src="../assets/starward-reach/screenshot-1.png" alt="starward-reach-1"></div>
-                    <div class="slide next"><img src="../assets/starward-reach/screenshot-2.png" alt="starward-reach-2"></div>
-                    <div class="slide"><img src="../assets/starward-reach/screenshot-3.png" alt="starward-reach-3"></div>
-                    <div class="slide prev"><img src="../assets/starward-reach/screenshot-4.png" alt="starward-reach-3"></div>
+                    <div class="slide current"><img src="assets/screenshot-1.png" alt="grubitecht-1"></div>
+                    <div class="slide next"><img src="assets/screenshot-2.png" alt="grubitecht-2"></div>
+                    <div class="slide"><img src="assets/screenshot-3.png" alt="grubitecht-3"></div>
+                    <div class="slide"><img src="assets/screenshot-4.png" alt="grubitecht-4"></div>
+                    <div class="slide prev"><img src="assets/screenshot-5.png" alt="grubitecht-5"></div>
                 </div>
             </section>
         </div>
     </div>
 
-    <div data-import="../imports/footer"></div>
+    <div data-import="/public/imports/footer"></div>
 </body>
 
 </html>

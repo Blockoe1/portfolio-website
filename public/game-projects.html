@@ -13,19 +13,19 @@
         rel="stylesheet">
 
     <!-- Set Website Icon-->
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/public/assets/favicon.ico" type="image/x-icon">
 
     <!-- Stylesheet Imports-->
-    <link rel="stylesheet" href="css/main.css" type="text/css">
-    <link rel="stylesheet" href="css/game-projects.css" type="text/css">
+    <link rel="stylesheet" href="/public/css/main.css" type="text/css">
+    <link rel="stylesheet" href="/public/css/game-projects.css" type="text/css">
 
     <!-- Import template HTML scripts -->
-    <script src="js/jquery.js" type="text/javascript"></script>
-    <script src="js/import.js" type="text/javascript"></script>
+    <script src="/public/js/jquery.js" type="text/javascript"></script>
+    <script src="/public/js/import.js" type="text/javascript"></script>
 </head>
 
 <body>
-    <div data-import="imports/navbar" data-script="js/navbar"></div>
+    <div data-import="/public/imports/navbar" data-script="/public/js/navbar"></div>
 
     <!-- Page Content -->
      <section class="game-projects page-content">
@@ -46,26 +46,26 @@
                     <h1 class="text-header">Video Games</h1>
                     <ul class="project-grid">
                         <!-- Video Games List -->
-                        <li data-import="imports/cards/snowmentum-card"></li>
-                        <li data-import="imports/cards/carrie-in-peril-card"></li>
-                        <li data-import="imports/cards/graffiti-gala-card"></li>
-                        <li data-import="imports/cards/grubitecht-card"></li>
-                        <li data-import="imports/cards/starward-reach-card"></li>
-                        <li data-import="imports/cards/twin-orbit-card"></li>
+                        <li data-import="game-projects/snowmentum/card"></li>
+                        <li data-import="game-projects/carrie-in-peril/card"></li>
+                        <li data-import="game-projects/graffiti-gala/card"></li>
+                        <li data-import="game-projects/grubitecht/card"></li>
+                        <li data-import="game-projects/starward-reach/card"></li>
+                        <li data-import="game-projects/twin-orbit/card"></li>
                     </ul>
                 </li>
                 <li class="center-content" id="prototypes">
                     <h1 class="text-header">Prototypes</h1>
                     <ul class="project-grid">
                         <!-- Prototypes List -->
-                        <li data-import="imports/cards/unknown-labyrinth-card"></li>
+                        <li data-import="game-projects/unknown-labyrinth/card"></li>
                     </ul>
                 </li>
             </ul>
         </div>
      </section>
 
-    <div data-import="imports/footer"></div>
+    <div data-import="/public/imports/footer"></div>
 </body>
 
 </html>
