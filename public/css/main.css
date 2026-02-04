@@ -13,6 +13,12 @@
     --main-color-light: #D1B2FF;
     --highlight: #FFFAB9;
 
+    --dark-color-const: #1D1D1D;
+    --light-color-const: #F8F8F8;
+    --main-color-dark-const: #7B45C8;
+    --main-color-light-const: #D1B2FF;
+    --highlight-const: #FFFAB9;
+
     --page-top-margin: 100px;
     --page-bottom-margin: 75px;
     --page-top-margin-mobile: 100px;
@@ -35,6 +41,18 @@
 
     --mobile-size: 890px;
 }
+
+/* Reverse colors in dark mode. */
+/* @media (prefers-color-scheme: dark) 
+{
+    :root
+    {
+        --dark-color: #F8F8F8;
+        --light-color: #1D1D1D;
+        --main-color-dark: #D1B2FF;
+        --main-color-light: #7B45C8;
+    }
+} */
 
 /* Default Styles*/
 *{
