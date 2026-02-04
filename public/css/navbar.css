@@ -1,0 +1,142 @@
+.navbar{
+    background-color: var(--dark-color);
+    padding: 5px;
+    border-radius: 0 0 var(--standard-border-radius) var(--standard-border-radius);
+    filter: drop-shadow(0 4px 2px rgba(0, 0, 0, 0.25));
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    width: 100%;
+}
+
+.navbar .container-l{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+.navbar .text-subhead{
+    font-size: var(--text-m);
+}
+
+.navbar .logo-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.navbar .logo-link h2{
+    margin-top: 10px;
+    color: var(--light-color);
+}
+.navbar .logo .logo-image{
+    background-image: url("../assets/logo.png");
+    background-size: contain;
+    height: 40px;
+    aspect-ratio: 1 / 1;
+}
+
+.navbar .main-menu ul{
+    display: flex;
+    max-height: 70px;
+}
+.navbar .main-menu ul li a{
+    padding: 5px 15px;
+    display: block;
+    font-weight: 300;
+    margin-top: 10px;
+    color: var(--light-color);
+}
+.navbar .main-menu ul li a:hover
+{
+    /* Mandatory override since the color is less specific 
+        Note to self: CSS applies in order of specificity first, then by compile order.
+    */
+    color: var(--main-color-light);
+}
+
+.navbar .main-menu .project-dropdown{
+    position: relative;
+    width: 100%;
+}
+.navbar .main-menu .project-dropdown-menu{
+    /* position: absolute; */
+    background-color: var(--dark-color);
+    border-radius: 0 0 var(--standard-border-radius) var(--standard-border-radius);
+    z-index: -10;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* top: -50px; */
+    padding-bottom: 10px;
+}
+.navbar .main-menu .project-dropdown-menu.hidden{
+    display: none;
+}
+.navbar .main-menu .project-dropdown-menu a{
+    font-size: var(--text-m);
+    line-height: 0.7em;
+}
+.navbar .hamburger-button{
+    display: none;
+    z-index: 110;
+    background-color: transparent;
+    border-style: none;
+}
+.navbar .hamburger-button .hamburger-line{
+    width: 40px;
+    height: 4px;
+    margin: 10px 0;
+    background-color: var(--light-color);
+}
+.navbar .mobile-menu{
+    position: fixed;
+    background-color: var(--dark-color);
+    border-radius: var(--standard-border-radius) 0 0 var(--standard-border-radius);
+    right: -250px;
+    transition:  right var(--button-transition) ease-out;
+    top: 0;
+    height: 100vh;
+    text-align: right;
+    padding: 20px;
+    padding-top: 75px;
+    z-index: -10;
+    filter: drop-shadow(0 4px 2px rgba(0, 0, 0, 0.25));
+}
+.navbar .mobile-menu ul li{
+    margin: 5px 0;
+}
+.navbar .mobile-menu ul li a{
+    color: var(--light-color);
+}
+.navbar .mobile-menu ul li a:hover{
+    color: var(--main-color-light);
+}
+.navbar .mobile-menu .sub-item{
+    font-size: var(--text-s);
+    line-height: 1em;
+}
+.navbar .mobile-menu ul li.spacer
+{
+    margin-top: 20px;
+}
+
+@media (max-width: 1440px) {
+    .navbar .logo-link h2
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 890px)
+{
+    .navbar .mobile-menu.active
+    {
+        right: 0;
+    }
+    .navbar .main-menu{
+        display: none;
+    }
+    .navbar .hamburger-button{
+        display: inline-block;
+    }
+}

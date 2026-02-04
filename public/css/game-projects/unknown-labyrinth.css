@@ -1,0 +1,13 @@
+.project .free img{
+    width: 50%;
+    margin: 20px;
+}
+@media (max-width: 920px) {
+    .project .row-flex{
+        flex-direction: column;
+    }
+    .project .free img
+    {
+        width: 100%;
+    }
+}
