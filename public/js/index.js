@@ -11,7 +11,7 @@ function init()
     function openTitle()
     {
         const menu = title.querySelector(".title-menu");
-        const initText = title.querySelector(".open-text");
+        // const initText = title.querySelector(".open-text");
 
         // initText.classList.add("hidden");
         menu.classList.remove("hidden");
