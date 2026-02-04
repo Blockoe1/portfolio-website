@@ -33,9 +33,9 @@ section{
 /* Background */
 .title .background{
     position: absolute;
-    top: 0;
+    top: 80px;
     aspect-ratio: 16 / 9;
-    height: 100%;
+    height: calc(100% - 80px);
     overflow: hidden;
 }
 .title .background iframe{
@@ -89,11 +89,11 @@ section{
 .title .title-content .title-menu
 {
     margin-bottom: 12vh;
-    transition: 0.5s;
+    transition: 1s ease-in-out;
 }
 .title .title-content .title-menu.hidden
 {
-    margin-bottom: 14vh;
+    margin-bottom: 15vh;
     opacity: 0;
     pointer-events: none;
 }
