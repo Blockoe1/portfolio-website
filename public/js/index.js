@@ -5,21 +5,22 @@ function init()
 {
     /* Title screen functionality */
     const title = document.querySelector(".title");
-    title.addEventListener("click", openTitle)
+    // title.addEventListener("click", openTitle)
+    openTitle();
 
     function openTitle()
     {
         const menu = title.querySelector(".title-menu");
         const initText = title.querySelector(".open-text");
 
-        initText.classList.add("hidden");
+        // initText.classList.add("hidden");
         menu.classList.remove("hidden");
         title.removeEventListener("click", openTitle);
     }
 
     /* Hide navbar until scroll. */
-    navbar = document.querySelector("#indexnavbar");
-    window.addEventListener("scroll", onScroll)
+    // navbar = document.querySelector("#indexnavbar");
+    // window.addEventListener("scroll", onScroll)
 }
 
 function onScroll()
