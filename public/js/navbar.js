@@ -14,8 +14,8 @@ function init()
     // Setup the project dropdown menu.
     projectDropdownMenu = document.querySelector(".project-dropdown-menu");
     let dropdown = document.querySelector(".project-dropdown");
-    dropdown.addEventListener("mouseover", enableDropdown)
-    dropdown.addEventListener("mouseout", disableDropdown);
+    // dropdown.addEventListener("mouseover", enableDropdown)
+    // dropdown.addEventListener("mouseout", disableDropdown);
 
     // Setup Hamburger Menu
     const hamburgerButton = document.querySelector(".hamburger-button");
