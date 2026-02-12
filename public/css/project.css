@@ -40,7 +40,16 @@
 .project .info .info-grid{
     display: grid;
     gap: 15px;
-    grid-template-columns: 1fr 5px 1.5fr 5px 1fr;
+    grid-template-columns: 1fr 5px 1.5fr 5px 2fr;
+}
+.project .info .info-grid h2
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project .info .info-grid h2 span{
+    flex-grow: 0;
 }
 .project .info .info-grid .divider{
     width: 100%;
