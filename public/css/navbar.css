@@ -26,6 +26,7 @@
 }
 .navbar .logo-link h2{
     margin-top: 10px;
+    margin-left: 20px;
     color: var(--light-color);
 }
 .navbar .logo .logo-image{
