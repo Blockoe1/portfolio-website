@@ -2,6 +2,10 @@
     --section-spacing: 30px;
 }
 
+.project .text-title
+{
+    color: var(--main-color-dark);
+}
 .project section{
     margin: var(--section-spacing);
 }
