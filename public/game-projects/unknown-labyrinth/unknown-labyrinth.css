@@ -1,12 +1,12 @@
-.project img{
-    max-width: 600px;
+.project .content-grid img{
+    width: 100%;
     margin: 20px;
 }
 @media (max-width: 920px) {
     .project .row-flex{
         flex-direction: column;
     }
-    .project .free img
+    .project img
     {
         width: 100%;
     }

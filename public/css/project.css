@@ -125,7 +125,7 @@
 {
     display: grid;
     grid-template-columns: 50% 50%;
-    gap: 30px 15px;
+    gap: 45px 15px;
 }
 .project .content-grid p{
     margin: auto 15px;
@@ -181,5 +181,13 @@
     .project .info .info-grid .divider
     {
         display: none;
+    }
+
+    .project .content-grid
+    {
+        grid-template-columns: 1fr;
+    }
+    .project .text-title{
+        white-space: wrap;
     }
 }
