@@ -102,7 +102,7 @@ section{
     margin-top: 140px;
 }
 .title .title-content .text-subhead{
-    margin-top: 40px;
+    margin-top: 5px;
 }
 .title .title-content .drop-shadow{
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
