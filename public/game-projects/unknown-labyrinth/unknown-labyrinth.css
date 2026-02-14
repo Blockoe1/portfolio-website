@@ -1,5 +1,5 @@
-.project .free img{
-    width: 50%;
+.project img{
+    max-width: 600px;
     margin: 20px;
 }
 @media (max-width: 920px) {
