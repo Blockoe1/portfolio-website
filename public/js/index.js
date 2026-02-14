@@ -14,7 +14,7 @@ function init()
         // const initText = title.querySelector(".open-text");
 
         // initText.classList.add("hidden");
-        menu.classList.remove("hidden");
+        // menu.classList.remove("hidden");
         title.removeEventListener("click", openTitle);
     }
 
