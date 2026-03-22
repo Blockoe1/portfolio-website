@@ -83,6 +83,7 @@
 {
     display: inline;
     margin: 0 10px;
+    font-size: calc(var(--text-m) - 2pt);
 }
 .project > .button{
     margin: 0;
