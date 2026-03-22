@@ -19,7 +19,7 @@
     --main-color-light-const: #D1B2FF;
     --highlight-const: #FFFAB9;
 
-    --page-top-margin: 80px;
+    --page-top-margin: 90px;
     --page-bottom-margin: 75px;
     --page-top-margin-mobile: 100px;
     --page-bottom-margin-mobile: 30px;
@@ -179,6 +179,9 @@ a.text-button:hover{
     max-height: 300px;
     flex-shrink: 1;
 }
+.project-card .abv-only{
+    display: none;
+}
 .project-card a{
     max-height: inherit;
     max-width: inherit;
@@ -266,9 +269,12 @@ a.text-button:hover{
 .abv-card{
     flex-shrink: 1;
 }
+.abv-card .project-card .abv-only{
+    display: inline;
+}
 .abv-card .project-card{
     max-width: 300px;
-    max-height: 390px;
+    max-height: 415px;
 }
 .abv-card .project-card img{
     width: 100%;
