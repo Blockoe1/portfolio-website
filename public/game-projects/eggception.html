@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO#: Set Page Title-->
+    <title>Eggception - Brandon Koederitz's Portfolio</title>
+    <!-- Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Set Website Icon-->
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+    <!-- Import FontAwesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Stylesheet Imports-->
+    <link rel="stylesheet" href="/css/main.css" type="text/css">
+    <link rel="stylesheet" href="/css/project.css" type="text/css">
+
+    <!-- Import template HTML scripts -->
+    <script src="/js/jquery.js" type="text/javascript"></script>
+    <script src="/js/import.js" type="text/javascript"></script>
+    <script src="/js/slideshow.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div data-import="/imports/navbar" data-script="/js/navbar"></div>
+
+    <!-- Page Content -->
+    <div class="project page-content">
+        <div class="container-s center-content">
+            <section class="title center-content">
+                <!-- # Title -->
+                <h1 class="text-title">Eggception</h1>
+                <!-- # Tagline -->
+                <h2 class="text-subhead">Eggscape a sequence of eggs by battling fierce egg-boiling bosses.</h2>
+                <img src="eggception/assets/banner.png" alt="" class="fill-img">
+                <!-- <iframe src="" frameborder="0" class="fill-img"></iframe> -->
+            </section>
+    
+            <section class="info">
+                <div class="info-grid">
+                    <!-- # Team Size -->
+                    <h2 class="text-subhead"><i class="fa-solid fa-people-group"></i>10</h2>
+                    <div class="divider"></div>
+                    <!-- # Project Duration -->
+                    <h2 class="text-subhead"><i class="fa-solid fa-clock"></i>2 Days</h2>
+                    <div class="divider"></div>
+                    <!-- # Game Engine -->
+                    <h2 class="text-subhead"><i class="fa-solid fa-id-badge"></i>Programmer</h2>
+                </div>
+                <h2 class="text-subhead">Programs Used:</h2>
+                <ul>
+                    <!-- # Programs Used -->
+                    <li><strong>-Unity</strong></li>
+                    <li>-GitHub</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="content-grid container-s">
+            <!-- # Game Description -->
+            <p>
+                What is eggception but an egg within an egg within an egg...?<br><br>
+                In this boss rush, you must fight your way out and eggscape from the confines of the outermost shell. Along the way, you
+                will face great dangers.  Fight eggceptionally powerful foes by flinging eggs or smacking with your frying pan
+                while dodging enemy eggtacks.  If your shell gets fried, your movement will become much smoother to help you eggvade.
+                Your spirit may crack under the pressure. Your brain may become scrambled. But, if you
+                eggscape, you will find a hidden truth.
+            </p>
+            <!-- Slideshow -->
+            <div class="slideshow">
+                <div class="slide-arrow prev">
+                    <span>&#10094;</span>
+                </div>
+                <div class="slide-arrow next">
+                    <span>&#10095;</span>
+                </div>
+                <div class="slide current"><img src="eggception/assets/screenshot-1.png" alt="eggception-1"></div>
+                <div class="slide next"><img src="eggception/assets/screenshot-2.png" alt="eggception-2"></div>
+                <div class="slide prev"><img src="eggception/assets/screenshot-3.png" alt="eggception-3"></div>
+                <div class="slide"><img src="eggception/assets/screenshot-4.png" alt="eggception-4"></div>
+                <div class="slide"><img src="eggception/assets/screenshot-5.png" alt="eggception-5"></div>
+            </div>
+            <!-- # Download Link -->
+            <div class="center-content show-buttons">
+                <a href="https://evandalygamedesign.itch.io/eggception" target="_blank" class="button">
+                    Download
+                </a>
+                <h2 class="text-subhead">We are still awaiting the results of the jam.</h2>
+            </div>
+            <!-- # Project Description-->
+            <p>
+                This game was made for the <strong>2026 Crossplay Game Jam</strong>, a collaborative game jam between Bradley University and 8 other 
+                universities across the midwest, with the theme of <strong>"You can't make an omlette without breaking a few eggs."</strong>  Since we
+                had a team of 10, we focused on creating the most polished game we could within our time limit.
+            </p>
+            
+            <!-- # Free Area -->
+            <div>
+                
+            </div>
+        </div>
+        <!-- # Contributions -->
+        <div class="contributions container-p">
+            <h2 class="text-subhead">My Contributions: </h2>
+            <ul>
+                <li>Developed a <strong>state machine</strong> based boss-making tool that allowed designers to easily make
+                    changes to boss behaviors.</li>
+                <li>Programmed boss movement, attack, and health systems.</li>
+                <li>Collaborated with a teammate to implement the first boss, <strong>the Mixing Bowl</strong>, based on their
+                    design specifics.</li>
+                <li>Utilized <strong>ProBuilder</strong> to create a screen shatter transition effect that shows breaking
+                    through each egg layer.</li>
+                <li>Added polish effects to player attacks, such as a swing trail and screenshake.</li>
+                <li>Assisted with playtesting and balancing bosses based on playtester feedback.</li>
+                <li>Enhanced player communication by implementing telegraphing for boss attacks.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-import="/imports/footer"></div>
+</body>
+
+</html>
