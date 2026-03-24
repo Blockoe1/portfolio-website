@@ -45,7 +45,7 @@
 }
 .project .title img.fill-img
 {
-    width: 100%;
+    max-width: 100%;
 }
 
 .project .info .info-grid{
