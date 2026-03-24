@@ -339,6 +339,8 @@ button.button:hover span
 {
     .button{
         min-width: 150px;
+        font-size: var(--text-s);
+        margin: 10px;
     }
 }
 
@@ -359,7 +361,7 @@ button.button:hover span
     transform: translate(0, -50%);
     background-color: var(--dark-color);
     color: var(--light-color);
-    padding: 20px;
+    padding: 10px;
     border-radius: var(--standard-border-radius);
     transition: var(--button-transition);
     margin: 10px;
@@ -411,6 +413,7 @@ button.button:hover span
     /* Text */
     .text-title
     {
+        margin: 40px 0 20px 0;
         font-size: 64pt;
     }
 }
@@ -419,6 +422,7 @@ button.button:hover span
 {
     /* Text */
     .text-title{
+        margin: 30px 0 15px 0;
         font-size: 54pt;
     }
     .text-header{
@@ -444,6 +448,7 @@ button.button:hover span
     /* Text */
     .text-title
     {
+        margin: 20px 0 10px 0;
         font-size:48pt;
     }
 
@@ -462,5 +467,14 @@ button.button:hover span
     }
     body{
         font-size: var(--text-xs);
+    }
+}
+
+@media (max-width: 400px) {
+    /* Text */
+    .text-title
+    {
+        margin: 15px 0 10px 0;
+        font-size: var(--text-l);
     }
 }

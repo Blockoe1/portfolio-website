@@ -43,6 +43,10 @@
 {
     aspect-ratio: 16 / 9;
 }
+.project .title img.fill-img
+{
+    width: 100%;
+}
 
 .project .info .info-grid{
     display: grid;
@@ -83,7 +87,7 @@
 {
     display: inline;
     margin: 0 10px;
-    font-size: calc(var(--text-m) - 2pt);
+    font-size: 1em;
 }
 .project > .button{
     margin: 0;
@@ -190,5 +194,18 @@
     }
     .project .text-title{
         white-space: wrap;
+    }
+}
+
+@media (max-width: 580px) 
+{
+    .project .title .text-subhead
+        {
+            font-size: var(--text-s);
+        }
+
+    .project .container-s{
+        width: 85%;
+        max-width: 85%;
     }
 }
