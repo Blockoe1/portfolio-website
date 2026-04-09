@@ -61,7 +61,7 @@ section{
     height: 50px;
     width: 100%;
     z-index: 7;
-    bottom: 0;
+    top: calc(100vh - 50px);
     position: absolute;
 }
 /* Content */
