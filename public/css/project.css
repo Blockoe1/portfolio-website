@@ -1,5 +1,5 @@
 :root{
-    --section-spacing: 40px;
+    --section-spacing: 40px 0;
 }
 
 .project .text-title
@@ -151,6 +151,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 45px 15px;
+    width: 100%;
 }
 .project .twin-grid p{
     margin: 0 15px;
@@ -163,6 +164,7 @@
 /* Contributions */
 .project .contributions{
     text-align: left;
+    width: 100%;
 }
 .project .contributions h2{
     text-align: center;
@@ -170,6 +172,11 @@
 .project .contributions ul{
     list-style: inside;
     width: 100%;
+    max-width: 600px;
+}
+.project .contributions .twin-grid ul
+{
+    max-width: 400px;
 }
 .project .contributions ul li
 {
@@ -181,6 +188,9 @@
     max-width: 700px;
     max-height: 700px;
     width: 100%;
+}
+.project p a{
+    text-decoration: underline;
 }
 
 @media (max-width: 1330px) 
