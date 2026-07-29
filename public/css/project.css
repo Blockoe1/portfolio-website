@@ -20,6 +20,7 @@
     justify-content: center;
 }
 
+/* Title */
 .project .title{
     text-align: center;
     width: 100%;
@@ -48,10 +49,24 @@
     max-width: 100%;
 }
 
+/* Links */
+.project .links{
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.project .links .button{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+/* Info */
 .project .info .info-grid{
     display: grid;
     gap: 15px;
-    grid-template-columns: 1fr 5px 1.5fr 5px 2fr;
+    grid-template-columns: 1fr 5px 1.5fr 5px 2fr 5px 1.5fr;
 }
 .project .info .info-grid h2
 {
@@ -89,6 +104,8 @@
     margin: 0 10px;
     font-size: 1em;
 }
+
+
 .project > .button{
     margin: 0;
 }
@@ -126,19 +143,21 @@
     justify-content: center;
 }
 
-.project .content-grid
+/* Twin Grid */
+.project .twin-grid
 {
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 45px 15px;
 }
-.project .content-grid p{
-    margin: auto 15px;
+.project .twin-grid p{
+    margin: 0 15px;
 }
-.project .content-grid h2{
+.project .twin-grid h2{
     text-align: center;
 }
 
+/* Contributions */
 .project .contributions{
     text-align: left;
 }
@@ -155,13 +174,7 @@
     text-indent: -1.4em;
 }
 
-.project .free{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-.project .content-grid .img1x1{
+.project .img1x1{
     max-width: 700px;
     max-height: 700px;
     width: 100%;
@@ -188,7 +201,7 @@
         display: none;
     }
 
-    .project .content-grid
+    .project .twin-grid
     {
         grid-template-columns: 1fr;
     }

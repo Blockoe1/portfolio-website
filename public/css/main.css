@@ -406,6 +406,11 @@ button.button:hover span
     height: 100%;
     border-radius: 0;
 }
+.slideshow .slide .slide-label{
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+}
 
 
 /* General Media Queries*/
