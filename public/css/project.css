@@ -1,5 +1,5 @@
 :root{
-    --section-spacing: 40px 0;
+    --section-spacing: 40px;
 }
 
 .project .text-title
@@ -8,7 +8,7 @@
     white-space: nowrap;
 }
 .project section{
-    margin: var(--section-spacing);
+    margin: var(--section-spacing) 0;
 }
 
 .project .container-s{
