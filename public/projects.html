@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games - Arcadia Koederitz's Portfolio</title>
+    <title>Projects - Arcadia Koederitz's Portfolio</title>
     <!-- Font Import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +18,7 @@
     <!-- Stylesheet Imports-->
     <link rel="stylesheet" href="/css/main.css" type="text/css">
     <link rel="stylesheet" href="/css/projects-base.css" type="text/css">
+    <link rel="stylesheet" href="/css/projects.css" type="text/css">
 
     <!-- Import template HTML scripts -->
     <script src="/js/jquery.js" type="text/javascript"></script>
@@ -30,24 +31,42 @@
     <!-- Page Content -->
      <section class="game-projects page-content">
         <div class="container center-content">
-            <h1 class="text-header">Games</h1>
+            <h1 class="text-header">All Projects</h1>
             <p>
-                Each game that I've worked on is an opportunity to devote myself completely to a project.<br>  On each of these projects, 
-                I put in as much time and effort as I could to ensure a polished finished project.<br><br>  Along the way, each project 
-                and each time taught new lessons.  Click on one to learn more!
+                Take a look at all of the projects I've worked on so far, organized in reverse chronological order.
             </p>
-            <!-- <div class="navigation-buttons">
-                <a href="#video-games" class="button"><span>Video Games</span></a>
-                <a href="#prototypes" class="button"><span>Prototypes</span></a>
-            </div> -->
+            <div class="navigation-buttons">
+                <a href="/game-projects.html" class="button"><span>Games</span></a>
+                <a href="/game-jam-projects.html" class="button"><span>Game Jams</span></a>
+                <a href="/prototype-projects.html" class="button"><span>Prototypes</span></a>
+            </div>
+            <div class="navigation-buttons years">
+                <a href="#2026" class="button"><span>2026</span></a>
+                <a href="#2025" class="button"><span>2025</span></a>
+                <a href="#2024" class="button"><span>2024</span></a>
+            </div>
         </div>
         <div class="container">
             <ul class="project-categories">
-                <li class="center-content" id="video-games">
+                <li class="center-content" id="2026">
+                    <h1 class="text-header">2026</h1>
                     <ul class="project-grid">
-                        <!-- Video Games List -->
+                        <li data-import="game-projects/eggception/card"></li>
+                        <li data-import="game-projects/food-flight/card"></li>
+                    </ul>
+                </li>
+                <li class="center-content" id="2025">
+                    <h1 class="text-header">2025</h1>
+                    <ul class="project-grid">
                         <li data-import="game-projects/snowmentum/card"></li>
+                        <li data-import="game-projects/carrie-in-peril/card"></li>
                         <li data-import="game-projects/graffiti-gala/card"></li>
+                        <li data-import="game-projects/unknown-labyrinth/card"></li>
+                    </ul>
+                </li>
+                <li class="center-content" id="2024">
+                    <h1 class="text-header">2024</h1>
+                    <ul class="project-grid">
                         <li data-import="game-projects/starward-reach/card"></li>
                         <li data-import="game-projects/twin-orbit/card"></li>
                     </ul>
