@@ -1,5 +1,5 @@
 :root{
-    --section-spacing: 30px;
+    --section-spacing: 40px;
 }
 
 .project .text-title
@@ -87,6 +87,8 @@
 }
 .project .info .info-grid .text-subhead{
     margin: auto;
+    white-space: nowrap;
+    font-size: calc(var(--text-l) - 5pt);
 }
 .project .info .info-grid .text-subhead i
 {
@@ -123,7 +125,7 @@
 }
 .project .slideshow{
     max-width: 600px;
-    margin: 20px 0;
+    margin: 0px 0;
 }
 .project .description{
     margin-top: 0;
@@ -133,7 +135,7 @@
     margin: 15px 0;
 }
 .project strong{
-    font-weight: var(--weight-semibold);
+    font-weight: var(--weight-bold);
     color: var(--main-color-dark);
 }
 
@@ -155,6 +157,7 @@
 }
 .project .twin-grid h2{
     text-align: center;
+    margin-top: 0;
 }
 
 /* Contributions */
@@ -190,7 +193,7 @@
     }
 }
 
-@media (max-width: 1000px) 
+@media (max-width: 1200px) 
 {
     .project .info .info-grid
     {
@@ -199,6 +202,10 @@
     .project .info .info-grid .divider
     {
         display: none;
+    }
+    .project .info .info-grid .text-subhead
+    {
+        white-space: wrap;
     }
 
     .project .twin-grid
