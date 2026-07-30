@@ -28,7 +28,7 @@
     margin: 15px 0 10px;
 }
 .about strong{
-    font-weight: 400;
+    font-weight: var(--weight-bold);
     color: var(--main-color-dark);
 }
 
