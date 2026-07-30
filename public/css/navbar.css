@@ -74,7 +74,7 @@
     display: none;
 }
 .navbar .main-menu .project-dropdown-menu a{
-    font-size: var(--text-m);
+    font-size: calc(var(--text-m) - 2px);
     line-height: 0.7em;
 }
 .navbar .hamburger-button{
