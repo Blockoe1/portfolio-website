@@ -410,6 +410,11 @@ button.button:hover span
     position: absolute;
     left: 20px;
     bottom: 10px;
+    font-weight: var(--weight-semibold);
+}
+.slideshow .slide .slide-label.light
+{
+    color: var(--light-color-const);
 }
 
 
