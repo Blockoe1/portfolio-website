@@ -201,7 +201,8 @@ a.text-button:hover{
 .project-card img{
     width: 50%;
     aspect-ratio: 1 / 1;
-    object-fit: cover;    
+    object-fit: cover;   
+    flex-shrink: 0; 
 }
 .project-card .card-text{
     padding: 20px;
