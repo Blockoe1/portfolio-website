@@ -89,4 +89,17 @@
     {
         display: block;
     }
+
+    .footer .footer-grid .icon-grid
+    {
+        justify-content: center;
+        max-height: 50px;
+        margin-bottom: 5px;
+    }
+    .footer .footer-grid .center-mobile
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
